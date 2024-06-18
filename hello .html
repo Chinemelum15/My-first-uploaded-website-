@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+<title>my new blog</title>
+<style>
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+p{
+    background-color: blue;
+    float: right;
+    color: white;
+    font-family: Monospace;
+    font-size: large;
+    font-weight: 800;
+}
+p::before{
+   content:"8";
+   width:20px;
+   text-align:center;
+   color:white;
+   height: 20px;
+   border-radius:50%;
+   display:inline-block;
+   animation-name: anim;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+   animation-direction: alternative;
+}
+
+ @keyframes anim{
+     10%{
+         background:red;
+         border:2px solid white;
+     }
+     30%{
+         background:red;
+         border:2px solid white;
+     }
+     
+     10%{
+         background:red;
+         border:2px solid white;
+     }
+ }
+.container{
+    background-color: blue;
+    font-size: 40px;
+    width: 360px;
+    height: 50px;
+    color: white;
+    font-weight: 800;
+}
+I{
+    margin: 8;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<p>Notification</p>
+<i>F</i>
+</div>
+</body>
+</html>
